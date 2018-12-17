@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import theme from './css/theme';
 import Home from './pages/Home';
-import Project from './pages/Blog';
-import Blog from './pages/Profile';
-import Profile from './pages/Project';
+import Projects from './pages/Projects';
+import Blog from './pages/Blog';
+import Profile from './pages/Profile';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
       <MuiThemeProvider theme={theme}>
         <div className="App">
           {/*<Home />*/}
-          <Project />
+          <Projects />
           {/*<Profile />*/}
           {/*<Blog />*/}
         </div>

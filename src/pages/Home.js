@@ -57,10 +57,10 @@ const Home = (props) => {
         >
           Shuyi Tao
         </Typography>
-        <div className={classes.buttonGroup}>
-          <HomeButton text={"Profile"} />
-          <HomeButton text={"Project"} />
-          <HomeButton text={"Blog"} />
+        <div>
+          <HomeButton text={"Profile"} delay={0}/>
+          <HomeButton text={"Project"} delay={1000}/>
+          <HomeButton text={"Blog"} delay={2000}/>
         </div>
         <div className={classes.quote}>
           <Typography

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from "@material-ui/core/Button/Button";
 import { withStyles } from '@material-ui/core/styles';
+import PropTypes from "prop-types";
 
 const styles = theme => ({
   button: {
@@ -35,5 +36,11 @@ const HomeButton = (props) => {
     </Button>
   )
 };
+
+HomeButton.propTypes = {
+  classes: PropTypes.object.isRequired,
+  text: PropTypes.string,
+};
+
 
 export default withStyles(styles)(HomeButton);
